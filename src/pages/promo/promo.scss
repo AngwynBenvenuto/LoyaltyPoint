@@ -1,0 +1,57 @@
+page-promo {
+    .promo-wrapper { padding:0 10px; }
+    .promo-title { 
+        color: #000;
+        width: 200px;
+        height: 20px;
+        position: relative;
+        overflow: hidden;
+        font-weight: 600;
+        display: block;
+        margin-bottom: 5px; 
+    }
+    .card {
+		margin-top:20px;
+        margin-bottom:10px;
+    }
+    .promo-image { height: auto;}
+
+    
+    //
+    .beauty{
+        .promo-button, .promo-button:active,
+        .promo-button:focus, .promo-button:visited,
+        .promo-button:hover{
+            color:#fff;
+            background:#f06eaa;
+            border:none;
+        }
+    }
+    .tasty{
+        .promo-button, .promo-button:active,
+        .promo-button:focus, .promo-button:visited,
+        .promo-button:hover{
+            color:#fff;
+            background:#005952;
+            border:none;
+        }
+    }
+    .professional{
+        .promo-button, .promo-button:active,
+        .promo-button:focus, .promo-button:visited,
+        .promo-button:hover{
+            color:#fff;
+            background:#9e0b0f;
+            border:none;
+        }
+    }
+    .excellent{
+        .promo-button, .promo-button:active,
+        .promo-button:focus, .promo-button:visited,
+        .promo-button:hover{
+            color:#fff;
+            background:#fecb17;
+            border:none;
+        }
+    }
+}

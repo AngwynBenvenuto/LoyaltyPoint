@@ -1,0 +1,40 @@
+page-voucher-detail {
+    .voucher-detail-wrapper{}
+    .voucher-detail-image-wrapper {
+        position:relative;
+        padding-bottom:0!important;
+
+        .voucher-detail-image {
+            background-position:0% 0%;
+            background-size: cover;
+            height:150px;
+            background-color: rgba($black-c, .6);
+            padding-bottom:0!important;
+            margin:0;
+            width:100%;
+
+            .bg-overlay { background-color: rgba($black-c, .6); }
+            ion-spinner { z-index: 2; }
+        }
+    }
+
+    .voucher-detail-content{
+        .voucher-detail-heading{
+            font-size:15px;
+            background:$pink;
+            color:#fff;
+            padding:5px;
+            margin:0;
+        }
+        .voucher-detail-info{ padding:5px }
+        .voucher-detail-created{margin-top:5px;}
+        .voucher-detail-description{ margin-top: 10px; }
+        .voucher-description-heading{
+            padding: 5px;
+            background: $pink;
+            color:#fff;
+            width:100%;
+        }
+        .voucher-detail-description p{ padding:0; margin: 0 }
+    }
+}

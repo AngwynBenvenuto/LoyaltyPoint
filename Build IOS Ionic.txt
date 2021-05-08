@@ -1,0 +1,54 @@
+Preparation (Before Pull Git)
+-> install dan download NodeJS
+-> buka terminal jalankan script 
+     * IOS "sudo npm install -g ionic cordova"
+     * Android "npm install -g ionic cordova"
+   Untuk IOS saja (install cocoapods yang digunakan untuk handle notification)
+     - jalankan script "sudo gem install cocoapods" pada terminal
+     - setelah instal jalankan script "pod setup" pada terminal 
+
+Install & Build Project 
+1. pull git (git@git.ittron.co.id:root/membership-vendor-ionic.git)
+2. masuk ke folder hasil pull > buka terminal > jalankan script "npm install"
+3. jalankan script "ionic cordova platform add ios"
+4. buka terminal di folder ${PROJECT_NAME}/platform/ios dan jalankan script "pod init" terlebih dahulu
+kemudian jalankan "pod install"
+5. jalankan script "ionic cordova build ios --prod --release"
+6. buka xcode > open project ( ${PROJECT_NAME}/platforms/ios/${PROJECT_NAME}.xcworkspace )
+NB: PROJECT_NAME -> folder dari hasil pull git
+
+Step di XCode
+   1. pada folder project (Vendor App)
+      * buka folder Resources
+      * buka file Vendor App.plist 
+      * pada source code tambahkan
+	   <key>NSAllowInsecureHTTPLoad</key>
+	   <true/> 
+	pada key -> <key>ittron.co.id</key>
+
+     - tab General > Signing & Debug
+       * ganti display name jadi Admin App
+
+       * jangan centang Automatically Managing Package
+       * pilih package yang sudah disediakan
+     - tab Capabilities 
+       * turn on Background mode > Push notification
+       * turn on Push Notification
+     - tab Build Setting
+       * tambahkan User-Defined settings
+         PODS_ROOT = ${SRCROOT}/Pods
+         PODS_PODFILE_DIR_PATH = ${SRCROOT}/.
+   2. pilih menu File -> Project/Workspace Setting
+      Shared Workspace Setting:
+      * Build Sytem: New Build System
+      Per-User Workspace Settings:
+      * Build System: Legacy Build System
+      setelah itu di klik Done   
+   3. pilih menu Product -> Clean
+   4. pada tab device, pilih Generic iOS Device
+   5. pilih menu Product -> Archive
+   6. setelah terbuka menu Archive pilih Distribute 
+   7. setelah pilih Distribute > pilih method Ad Hoc Deployment > Next > Next
+   8. pilih profile 
+   9. pilih lokasi save .ipa
+   10. terakhir pilih save

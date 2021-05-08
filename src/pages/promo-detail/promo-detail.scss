@@ -1,0 +1,49 @@
+page-promo-detail {
+    .button-close, .button-close:active,
+    .button-close:hover, .button-close:visited,
+    .button-close.active {
+        position: absolute;
+        z-index: 9999;
+        background: transparent;
+    }
+    h6 { margin:0; }
+    .promo-content { padding:10px; }
+    .promo-image-wrapper {
+        position:relative;
+        padding-bottom:0!important;
+
+        .promo-image {
+            background-position:0% 0%;
+            background-size: cover;
+            height:auto;
+            object-fit: contain;
+            background-color: rgba($black-c, .6);
+            padding-bottom:0!important;
+            margin:0;
+            width:100%;
+
+            .bg-overlay { background-color: rgba($black-c, .6); }
+            ion-spinner { z-index: 2; }
+        }
+    }
+
+    .promo-content{
+        .promo-heading{
+            font-size:15px;
+            background:$defaultcolor;
+            color:#fff;
+            padding:5px;
+            margin:0;
+        }
+        
+        .promo-created{margin-top:5px;}
+        .promo-description{ margin-top: 10px; }
+        .promo-description-heading{
+            padding: 5px;
+            background: $defaultcolor;
+            color:#fff;
+            width:100%;
+        }
+        .promo-description p{ padding:0; margin: 0 }
+    }
+}

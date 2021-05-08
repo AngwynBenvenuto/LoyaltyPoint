@@ -1,0 +1,485 @@
+{
+  "project_info": {
+    "project_number": "493909549224",
+    "firebase_url": "https://dpc-salon.firebaseio.com",
+    "project_id": "dpc-salon",
+    "storage_bucket": "dpc-salon.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:493909549224:android:3d6c96618a0a73cf",
+        "android_client_info": {
+          "package_name": "com.dpc.cafe"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "493909549224-8udtuomvr2rd3ach38ggcr5gblut03jk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDnnYgafZrCw149GGNPQkjR_buzSnHWB84"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:493909549224:android:b6f2145c880b4f64",
+        "android_client_info": {
+          "package_name": "com.dpc.car"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "493909549224-8udtuomvr2rd3ach38ggcr5gblut03jk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDnnYgafZrCw149GGNPQkjR_buzSnHWB84"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:493909549224:android:75423139d29762e1",
+        "android_client_info": {
+          "package_name": "com.dpc.company"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "493909549224-8udtuomvr2rd3ach38ggcr5gblut03jk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDnnYgafZrCw149GGNPQkjR_buzSnHWB84"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:493909549224:android:305a7fa9a80c85d3",
+        "android_client_info": {
+          "package_name": "com.dpc.education"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "493909549224-8udtuomvr2rd3ach38ggcr5gblut03jk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDnnYgafZrCw149GGNPQkjR_buzSnHWB84"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:493909549224:android:8b5de445a2002362",
+        "android_client_info": {
+          "package_name": "com.dpc.hotel"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "493909549224-8udtuomvr2rd3ach38ggcr5gblut03jk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDnnYgafZrCw149GGNPQkjR_buzSnHWB84"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:493909549224:android:cfa1ba08728e9778",
+        "android_client_info": {
+          "package_name": "com.dpc.laundry"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "493909549224-8udtuomvr2rd3ach38ggcr5gblut03jk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDnnYgafZrCw149GGNPQkjR_buzSnHWB84"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:493909549224:android:f4d4af563214e47b",
+        "android_client_info": {
+          "package_name": "com.dpc.notary"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "493909549224-8udtuomvr2rd3ach38ggcr5gblut03jk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDnnYgafZrCw149GGNPQkjR_buzSnHWB84"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:493909549224:android:0ee2f2d4f8be6a94",
+        "android_client_info": {
+          "package_name": "com.dpc.personal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "493909549224-8udtuomvr2rd3ach38ggcr5gblut03jk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDnnYgafZrCw149GGNPQkjR_buzSnHWB84"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:493909549224:android:761d588003f7d3cb",
+        "android_client_info": {
+          "package_name": "com.dpc.property"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "493909549224-8udtuomvr2rd3ach38ggcr5gblut03jk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDnnYgafZrCw149GGNPQkjR_buzSnHWB84"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:493909549224:android:a4927a8cc051b53a",
+        "android_client_info": {
+          "package_name": "com.dpc.salon"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "493909549224-cagb6qh94t203eokttt70qj2iha2akkb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dpc.salon",
+            "certificate_hash": "4e8457d5cf5bf1bc588d78ac772c27d8e77bc0b9"
+          }
+        },
+        {
+          "client_id": "493909549224-8udtuomvr2rd3ach38ggcr5gblut03jk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDnnYgafZrCw149GGNPQkjR_buzSnHWB84"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "493909549224-8udtuomvr2rd3ach38ggcr5gblut03jk.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "493909549224-c9ljhgipcc25o6f4abv16fm73mpa4ect.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.dpc.laundry"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:493909549224:android:7dcbf37a6b343a31",
+        "android_client_info": {
+          "package_name": "com.dpc.tour"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "493909549224-8udtuomvr2rd3ach38ggcr5gblut03jk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDnnYgafZrCw149GGNPQkjR_buzSnHWB84"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:493909549224:android:0f1e3b72de904643",
+        "android_client_info": {
+          "package_name": "com.dpc.workshop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "493909549224-8udtuomvr2rd3ach38ggcr5gblut03jk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDnnYgafZrCw149GGNPQkjR_buzSnHWB84"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:493909549224:android:422748bf64d4cd1c",
+        "android_client_info": {
+          "package_name": "com.dpccashier.cafe"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "493909549224-8udtuomvr2rd3ach38ggcr5gblut03jk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDnnYgafZrCw149GGNPQkjR_buzSnHWB84"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:493909549224:android:11aa25188962ec25",
+        "android_client_info": {
+          "package_name": "com.dpccashier.salon"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "493909549224-f5f255fp4us4u02un292ja9b1jrqqerq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dpccashier.salon",
+            "certificate_hash": "4e8457d5cf5bf1bc588d78ac772c27d8e77bc0b9"
+          }
+        },
+        {
+          "client_id": "493909549224-8udtuomvr2rd3ach38ggcr5gblut03jk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDnnYgafZrCw149GGNPQkjR_buzSnHWB84"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "493909549224-8udtuomvr2rd3ach38ggcr5gblut03jk.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "493909549224-c9ljhgipcc25o6f4abv16fm73mpa4ect.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.dpc.laundry"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

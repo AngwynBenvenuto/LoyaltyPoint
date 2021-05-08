@@ -1,0 +1,59 @@
+register-success {
+    .register-success-wrapper{ padding: 5px; margin-top: 30px; }
+    .register-success-box-title{
+        text-align:center;
+        margin:0 auto;
+    }
+    .register-success-title{
+        font-size: 15px;
+        font-weight:bold;
+        color:#000;
+    }
+    .register-success-message{
+        color:#888;
+        font-size:12px;
+        display:block;
+        margin-top:10px;
+    }
+    .register-success-button{ margin-top:25px;}
+
+
+
+    //
+    .beauty{
+        .register-success-button, .register-success-button:active,
+        .register-success-button:focus, .register-success-button:visited,
+        .register-success-button:hover {
+            color:#fff;
+            background:#f06eaa;
+            border:none;
+        }
+    }
+    .tasty{
+        .register-success-button, .register-success-button:active,
+        .register-success-button:focus, .register-success-button:visited,
+        .register-success-button:hover {
+            color:#fff;
+            background:#005952;
+            border:none;
+        }
+    }
+    .professional{
+        .register-success-button, .register-success-button:active,
+        .register-success-button:focus, .register-success-button:visited,
+        .register-success-button:hover {
+            color:#fff;
+            background:#9e0b0f;
+            border:none;
+        }
+    }
+    .excellent{
+        .register-success-button, .register-success-button:active,
+        .register-success-button:focus, .register-success-button:visited,
+        .register-success-button:hover {
+            color:#fff;
+            background:#fecb17;
+            border:none;
+        }
+    }
+}

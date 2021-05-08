@@ -1,0 +1,154 @@
+page-login {
+    ion-content{
+        background-size: cover;
+        background-repeat: no-repeat;
+        object-fit: contain;
+        background-position: 50% 50%;
+        width:100%;
+        height:100%;
+        position: fixed;
+    }
+
+
+    .beauty {
+        ion-content { 
+            //background: transparent url('../../assets/imgs/beauty/login.jpg') no-repeat;
+            background-color:#f06eaa;
+        }
+
+        .login-button, .login-button:focus,
+        .login-button:hover, .login-button:active{
+            background:#f06eaa;
+            border:1px solid #f06eaa;
+            font-weight:normal;
+            color:#ffff;
+        }
+        
+        .register-button, .register-button:focus,
+        .register-button:hover, .register-button:active{
+            background:white;
+            border:1px solid #e2e2e2;
+            font-weight:normal;
+            color:#f06eaa;
+        }
+    }
+    
+    .tasty {
+        //login wrapper
+        ion-content { 
+            //background: transparent url('../../assets/imgs/tasty/login.png') no-repeat;
+            background-color: #005952;
+        }
+
+        .login-button, .login-button:focus,
+        .login-button:hover, .login-button:active{
+            background:#fff;
+            border:1px solid #fff;
+            font-weight:normal;
+            color:#005952;
+        }
+        
+        .register-button, .register-button:focus,
+        .register-button:hover, .register-button:active{
+            background:#005952;
+            border:1px solid #fff;
+            font-weight:normal;
+            color:#fff;
+        }
+    }
+
+    
+    .professional {
+        ion-content { 
+            //background-image: url('../../assets/imgs/professional/login.png');
+            background-color: #9e0b0f;
+        }
+
+        .login-button, .login-button:focus,
+        .login-button:hover, .login-button:active{
+            background:#fff;
+            border:1px solid #fff;
+            font-weight:normal;
+            color:#9e0b0f;
+        }
+        
+        .register-button, .register-button:focus,
+        .register-button:hover, .register-button:active{
+            background:#9e0b0f;
+            border:1px solid #fff;
+            font-weight:normal;
+            color:#fff;
+        }
+    }
+    
+
+    .excellent {
+        ion-content { 
+            //background-image: url('../../assets/imgs/excellent/login.png');
+            background-color: #fecb17;
+        }
+
+        .login-button, .login-button:focus,
+        .login-button:hover, .login-button:active{
+            background:#fff;
+            border:1px solid #fff;
+            font-weight:normal;
+            color:#fecb17;
+        }
+        
+        .register-button, .register-button:focus,
+        .register-button:hover, .register-button:active{
+            background:#fecb17;
+            border:1px solid #fff;
+            font-weight:normal;
+            color:#fff;
+        }
+    }
+
+
+    
+    .login-wrapper { position:relative; top: 5% }
+    .login-logo-wrapper{ width:100% }
+    .logo {
+        font-size:60px;
+        font-family: 'Yellow Pen';
+        margin: 0 auto 20px auto;
+        overflow: hidden;
+        color: #fff;
+        position:relative;
+        padding:20px 0 20px 0;
+        width:100%;
+        text-align:center;
+    }
+    .logo span { font-weight: 400px }
+    .logo:after {
+        content:'';
+        width:80px;
+        height: 4px;
+        background: #fff;
+        position:absolute;
+        bottom:0;
+        left:0;
+        right:0;
+        margin:0 auto;
+    }
+
+    //login form
+    .login-form {
+        border-radius: 20px;
+        background: #fff;
+        opacity: .6;
+        padding:10px;
+    }
+    .login-form .item-md, .login-form .item-ios { background: transparent }
+    .login-button-wrapper{ margin-top:10px;}
+    .login-button { text-transform: none;}
+
+    //forgot wrapper
+    .forgot-wrapper{ margin:10px 0;}
+
+    //signup wrapper
+    .signup-wrapper { margin-top:20px; }
+    .register-button{ font-weight:bold; }
+
+}

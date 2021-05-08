@@ -1,0 +1,51 @@
+<ion-header no-border [class]="themes">
+  <ion-navbar class="toolbar-page">
+    <ion-title>
+      <div >{{ 'Histori Poin' | translate }}</div>
+    </ion-title>
+    <ion-buttons end>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content fullscreen #LPContent>
+  <div class="history-full-wrapper {{themes}}">
+    <div class="no-data" *ngIf="countItems == 0">
+      <div class="no-data-image"></div>
+    </div>
+
+    <div class="history-wrapper" padding *ngIf="countItems > 0">
+      <ion-row no-padding class="history-box-recent">
+        <ion-col no-padding col-6>
+          <div class="history-recent-point">
+            <span>{{ 'Poin terakhir' | translate }}</span>
+          </div>
+        </ion-col>
+        <ion-col no-padding col-6>
+          <div class="history-point" text-right>
+            <span>{{ points | formatNumber }} {{ 'Poin' | translate }}</span>
+          </div>
+        </ion-col>
+      </ion-row>
+      <ion-list class="card card-list">
+        <ion-item *ngFor="let itemHistory of historyArray" (click)="goToDetailHistory(itemHistory)">
+          <ion-row>
+            <ion-col col-12 text-left>
+              <h3 class="history-title">{{ itemHistory.description }}</h3>
+              <p class="history-description" text-wrap text-left text-muted>{{ itemHistory.module }} {{
+                itemHistory.date | formatDate }}</p>
+              <p [class]="'history-poin '+ (itemHistory.balance_in > 0 ? 'plus':'min')">{{itemHistory.balance_in > 0 ?
+                '+':'-'}} {{ 'Poin' | translate }} {{ (itemHistory.balance_in > 0 ? itemHistory.balance_in :itemHistory.balance_out ) |
+                formatNumber }}</p>
+            </ion-col>
+          </ion-row>
+        </ion-item>
+      </ion-list>
+
+
+      <ion-infinite-scroll (ionInfinite)="doInfinite($event)">
+        <ion-infinite-scroll-content loadingSpinner="bubbles"></ion-infinite-scroll-content>
+      </ion-infinite-scroll>
+    </div>
+  </div>
+</ion-content>

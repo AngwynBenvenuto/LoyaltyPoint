@@ -1,0 +1,59 @@
+<ion-header no-border>
+  <ion-navbar color="pink">
+    <ion-title>{{ 'Detail Voucher' | translate }}</ion-title>
+    <ion-buttons end>
+      <button ion-button (click)="close()">
+        <ion-icon name="ios-close-circle-outline"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+<ion-content fullscreen #LPContent>
+  <div class="voucher-detail-full-wrapper">
+    <div class="no-data" *ngIf="dataFound == false">
+      <div class="no-data-image"></div>
+    </div>
+
+    <div class="voucher-detail-wrapper">
+      <div class="voucher-detail-image-wrapper" (click)="viewImage(dataVoucher?.image_url)">
+        <background-image tappable class="voucher-detail-image"
+          [src]="dataVoucher?.image_url || 'assets/imgs/no-image.jpg'"></background-image>
+      </div>
+      <div class="voucher-detail-content">
+        <h3 class="voucher-detail-heading">{{ dataVoucher?.name || '-' }}</h3>
+        <div class="voucher-detail-info">
+          <ion-row class="voucher-detail-point" no-padding>
+            <ion-col no-padding>
+              <div class="point">
+                <span>{{ dataVoucher?.point || '-' }} Points</span>
+              </div>
+            </ion-col>
+          </ion-row>
+          <!-- <ion-row class="voucher-detail-stock">
+            <ion-col>
+              <div class="stock">
+                <span>{{ dataVoucher?.stock || '-' }} Stock</span>
+              </div>
+            </ion-col>
+          </ion-row> -->
+          <ion-row class="voucher-detail-created" no-padding>
+            <ion-col no-padding>
+              <div class="time">
+                <span>{{ dataVoucher?.created || '-' }}</span>
+              </div>
+            </ion-col>
+          </ion-row>
+          <ion-row class="voucher-detail-description" no-padding>
+            <ion-col no-padding>
+              <div class="voucher-description-heading">{{ 'Deskripsi' | translate }}</div>
+              <p [innerHTML]="dataVoucher?.description || '-'" class="desc"></p>
+            </ion-col>
+          </ion-row>
+        </div>
+
+      </div>
+  
+    </div>
+  </div>
+  
+</ion-content>

@@ -1,0 +1,168 @@
+page-voucher {
+    .label-md { margin:0; }
+    .voucher-wrapper{ padding:10px; }
+    .item-md.item-block .item-inner,
+    .item-ios.item-block .item-inner {
+        border-bottom: unset;
+    }
+    .voucher-item{
+        position:relative;
+        overflow: hidden;
+        margin: 10px auto;
+        border-radius:20px;
+        display: block;
+        -webkit-box-shadow: 0 4px 2px -2px rgba(0,52,113,0.25);
+        box-shadow: 0 4px 2px -2px rgba(0,52,113,0.25);
+    }
+    .voucher-image-wrapper{
+        padding:0;
+        margin:0;
+        position:relative;
+        float:left;
+        margin:0!important;
+        height:100%!important;
+        width:auto!important;
+    }
+    .voucher-image-wrapper{
+        padding:0;
+        margin:0;
+        position:relative;
+        float:left;
+        margin:0!important;
+        height:100%!important;
+        width:auto!important;
+    }
+    .voucher-image-wrapper:before,.voucher-item:after{
+        content:'';
+        background:#fff;
+        border-radius:100%;
+        width: 20px;
+        height: 20px;
+        position:absolute;
+        margin: 0 auto;
+        padding:0;
+        vertical-align: middle;
+    }
+    .voucher-item:after{
+        right:-10px;
+        top:35px;
+    }
+    .voucher-image-wrapper:before{
+        left:-10px;
+        top:35px;
+    }
+    
+
+    
+    //
+    .beauty {
+        .voucher-item-0 .item-inner {
+            background:#FFFABB;
+        }
+        .voucher-item-1 .item-inner {
+            background:#D6F3FF;
+        }
+        .voucher-item-2 .item-inner {
+            background:#FEE3FF;
+        }
+        .voucher-item-3 .item-inner {
+            background:#BEE8E6;
+        }
+        .voucher-item-4 .item-inner {
+            background:#FFE2EF;
+        }
+    }
+   
+    .tasty {
+        .voucher-item-0 .item-inner, .voucher-item-1 .item-inner,
+        .voucher-item-2 .item-inner, .voucher-item-3 .item-inner,
+        .voucher-item-4 .item-inner {
+            background:transparent url('../../assets/imgs/tasty/background.png') no-repeat 50% 50%;
+            background-color: #005952;
+            background-size:cover;
+            object-fit: contain;
+            color:#fff
+        }
+        .voucher-point span { color: #fff }
+        .voucher-button, .voucher-button:focus,
+        .voucher-button:hover, .voucher-button:active{
+            background:#fff;
+            border:1px solid #fff;
+            font-weight:bold;
+            font-size:11px;
+            color:#005952;
+        }
+    }
+
+    .professional {
+        .voucher-item-0 .item-inner, .voucher-item-1 .item-inner,
+        .voucher-item-2 .item-inner, .voucher-item-3 .item-inner,
+        .voucher-item-4 .item-inner {
+            background-color: #9e0b0f;
+            background-size:cover;
+            object-fit: contain;
+            color:#fff
+        }
+        .voucher-point span { color: #fff }
+        .voucher-button, .voucher-button:focus,
+        .voucher-button:hover, .voucher-button:active{
+            background:#9e0b0f;
+            border:1px solid #fff;
+            font-weight:bold;
+            font-size:11px;
+            color:#fff;
+        }
+    }
+
+    .excellent {
+        .voucher-item-0 .item-inner, .voucher-item-1 .item-inner,
+        .voucher-item-2 .item-inner, .voucher-item-3 .item-inner,
+        .voucher-item-4 .item-inner {
+            background-color: #fecb17;
+            background-size:cover;
+            object-fit: contain;
+            color:#fff
+        }
+        .voucher-point span { color: #fff }
+        .voucher-button, .voucher-button:focus,
+        .voucher-button:hover, .voucher-button:active{
+            background:#fecb17;
+            border:1px solid #fff;
+            font-weight:bold;
+            font-size:11px;
+            color:#fff;
+        }
+    }
+
+
+   
+    .voucher-text-wrapper {
+        padding-right:15px;
+        padding-bottom:5px;
+    }
+    .voucher-image{
+        width:100%!important;
+        height:100%!important;
+        background-position:center center;
+        background-size:cover;
+        object-fit: cover;
+    }
+    h2.voucher-title {
+        margin-top:0.9rem;
+        font-size:13px;
+        width: auto;
+        height: 30px;
+        position: relative;
+        overflow: hidden;
+    }
+    .voucher-point, .voucher-stock { padding:0; margin:0 }
+    .voucher-stock{ font-size:12px; }
+    .voucher-point{
+        font-size:12px;
+        color:#000;
+        position:relative;
+    }
+    .voucher-point span { position:relative; }
+    .voucher-button{  font-size: 10px; }
+
+}

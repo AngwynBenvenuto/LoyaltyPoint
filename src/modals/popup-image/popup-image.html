@@ -1,0 +1,15 @@
+<ion-content padding class="main-view">
+    <div class="overlay"></div>
+    <div class="modal_content">
+        <div class="circle">
+            <ion-icon name="ios-close-circle-outline" color="white"
+                class="icon-modal" (click)="close()"></ion-icon>
+        </div>
+        <div class="modal-content">
+            <div class="popup-image-wrapper">
+                <img src="{{ imageSrc || 'assets/imgs/no-image.jpg'}}" 
+                    class="fullscreen-image"/>
+            </div>
+        </div>
+    </div>      
+</ion-content>

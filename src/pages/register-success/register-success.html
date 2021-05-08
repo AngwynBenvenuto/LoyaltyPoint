@@ -1,0 +1,23 @@
+<ion-content padding class="main-view modal_wrapper {{ themes }}">
+    <div class="overlay"></div>
+    <div class="modal_content">
+        <div class="circle">
+            <ion-icon name="ios-close" color="white" class="icon-modal" (click)="close()"></ion-icon>
+        </div>
+        <div class="modal-content">
+            <div class="register-success-wrapper">
+                <div class="register-success-box-title">
+                    <div class="register-success-title">
+                        <span>{{ title | translate }}</span>
+                    </div>
+                    <div class="register-success-message">{{ 'Silahkan konfirmasi email anda.' | translate }}</div>
+                </div>
+                <button ion-button block color="default" 
+                    class="register-success-button round"
+                    (click)="confirmationEmail()">{{ 'Konfirmasi Email' | translate }}</button>
+        
+            </div>
+        </div>
+    </div>
+</ion-content>
+      

@@ -1,0 +1,5 @@
+<div [class]="themes">
+  <ion-tabs [selectedIndex]="selectedIndex" #LPTabs>
+    <ion-tab *ngFor="let tab of arrTab" [root]="tab.root" [tabTitle]="tab.title" [tabIcon]="tab.icon" tabsHideOnSubPages></ion-tab>
+  </ion-tabs>
+</div>

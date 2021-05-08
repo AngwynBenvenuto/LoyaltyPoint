@@ -1,0 +1,58 @@
+<ion-content fullscreen #LPContent>
+  <div [class]="getTheme()">
+    <div class="expandable-header" [style.backgroundImage]="'url(' + cmsHeader + ')'">
+      <div class="lp-app-name">{{ appName | translate }}</div>
+      <div class="header-title app-title">
+        <span>{{ pageVoucherTitle | translate }}</span>
+      </div>
+      <div class="icon-lonceng" (tap)="goToNotification()">
+        <ion-icon name="icon-moon-notification" class="size-lonceng"></ion-icon>
+      </div>
+    </div>
+
+    <div class="voucher-full-wrapper">
+      <div class="no-data" *ngIf="countItems == 0">
+        <div class="no-data-image"></div>
+      </div>
+
+      <div class="voucher-wrapper" *ngIf="countItems > 0">
+        <div class="voucher-content">
+          <div class="voucher-list">
+            <ion-list>
+              <ion-item [class]="'voucher-item voucher-item-'+(ii % 5)" 
+                *ngFor="let voucher of voucherArray; let ii = index ; ">
+                <div class="voucher-item-wrapper">
+                  <ion-row>
+                    <ion-col col-5 no-padding>
+                      <ion-thumbnail item-left no-margin class="voucher-image-wrapper">
+                        <img src="{{ voucher.image_url || 'assets/imgs/no-image.jpg' }}" class="voucher-image">
+                      </ion-thumbnail>
+                    </ion-col>
+                    <ion-col no-padding>
+                      <div text-right class="voucher-text-wrapper">
+                        <h2 class="voucher-title" text-wrap>{{ voucher.name }}</h2>
+                        <p class="voucher-point">
+                          <span>{{ voucher.point | formatNumber }} {{ 'Poin' | translate }}</span>
+                        </p>
+                        <p class="voucher-stock">{{ 'Tersisa' | translate }} {{ voucher.stock }}</p>
+                        <button ion-button small (click)="viewDetail(voucher.voucher_id)" color="default" class="voucher-button round">{{
+                          'Detail' | translate }}</button>
+                      </div>
+                      
+                    </ion-col>
+                  </ion-row>
+                </div>
+                <div style="clear:both"></div>
+              </ion-item>
+            </ion-list>
+
+
+            <ion-infinite-scroll (ionInfinite)="doInfinite($event)">
+              <ion-infinite-scroll-content loadingSpinner="bubbles"></ion-infinite-scroll-content>
+            </ion-infinite-scroll>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</ion-content>

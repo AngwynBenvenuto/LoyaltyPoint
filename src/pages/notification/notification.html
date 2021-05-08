@@ -1,0 +1,31 @@
+<ion-header no-border [class]="themes">
+  <ion-navbar class="toolbar-page">
+    <ion-title>{{ 'Notification' | translate }}</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content fullscreen #LPContent>
+  <div class="notification-full-wrapper {{ themes }}">
+    <div class="no-data" *ngIf="countItems == 0">
+      <div class="no-data-image"></div>
+    </div>
+
+    <div class="notification-wrapper" padding *ngIf="countItems > 0">
+      <ion-list class="card card-list">
+        <ion-item *ngFor="let items of notificationArray" (click)="goToDetailNotification(items)">
+          <ion-row>
+            <ion-col col-6 text-left>
+              <h3>{{ items.title }}</h3>
+              <p class="description" text-wrap text-left>{{ items.message }}</p>
+            </ion-col>
+            <ion-col col-6 text-right>
+              <p>{{ items.date }} {{ items.time }}</p>
+            </ion-col>
+          </ion-row>
+        </ion-item>
+      </ion-list>
+      <ion-infinite-scroll (ionInfinite)="doInfinite($event)">
+        <ion-infinite-scroll-content loadingSpinner="bubbles"></ion-infinite-scroll-content>
+      </ion-infinite-scroll>
+    </div>
+  </div>
+</ion-content>

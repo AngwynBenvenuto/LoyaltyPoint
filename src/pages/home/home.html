@@ -1,0 +1,174 @@
+<ion-content fullscreen #LPContent>
+  <div [class]="themes">
+    <div class="hometop-wrapper">
+      <div class="expandable-header" [style.backgroundImage]="'url(' + cmsHeader + ')'">
+        <div class="lp-app-name">{{ appName | translate }}</div>
+        <div class="header-title app-title home-only">
+          <span>{{ nameTitle | translate }}</span>
+        </div>
+        <div class="icon-lonceng" (tap)="goToNotification()">
+          <ion-icon name="icon-moon-notification" class="size-lonceng"></ion-icon>
+        </div>
+      </div>
+
+      <div class="profile-wrapper">
+        <div class="profile-box-wrapper" (click)="goToUserSetting()">
+          <div class="profile-img-box">
+            <div class="profile-img">
+              <img src="{{ dataProfile?.profile_image || 'assets/imgs/no-profile.jpg' }}" />
+            </div>
+          </div>
+          <div class="profile-name-box">
+            <div class="profile-name">
+              {{ dataProfile?.name }}
+            </div>
+          </div>
+        </div>
+        <div class="point-box-wrapper">
+          <div class="point-box" (click)="goToHistory()">
+            <div class="point-bold">{{ dataProfile?.point_balance | number }} {{ 'Poin' | translate }}</div>
+          </div>
+        </div>
+        <div style="clear:both"></div>
+      </div>
+
+      <div class="banner-wrapper">
+        <ion-slides #sliderBanner *ngIf="bannerData && bannerData.length" autoplay="5000" loop="true" speed="300" slidesPerView="1" pager="true" autoplayDisableOnInteraction="false">
+          <ion-slide *ngFor="let slide of bannerData" class="banner">
+            <img src="{{ slide.image_url }}" class="banner-image" />
+          </ion-slide>
+        </ion-slides>
+      </div>
+    </div>
+
+    <div class="dealofday-wrapper">
+      <div class="box-title-wrapper">
+        <ion-grid no-padding>
+          <ion-row no-padding>
+            <ion-col col-6 no-padding>
+              <div class="box-title">
+                {{ pagePromoTitle | translate }}
+              </div>
+            </ion-col>
+            <ion-col col-6 no-padding>
+              <div class="box-more default" (click)="seeMorePromo()">
+                {{ 'Lihat Semua' | translate }}
+              </div>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </div>
+      <ion-slides #sliderPromo *ngIf="promoData && promoData.length" speed="300" slidesPerView="1.1" 
+          pager="false" autoplayDisableOnInteraction="false">
+        <ion-slide *ngFor="let promo of promoData">
+          <ion-card class="promo-card card no-margin round">
+            <img src="{{ promo.image_url }}" alt="" class="promo-image" />
+            <div class="padding-xs">
+              <ion-grid no-padding>
+                <ion-row no-padding>
+                  <ion-col no-padding>
+                    <div class="promo-title-wrapper" text-left>
+                      <div class="promo-title">{{ promo.name }}</div>
+                      <div class="time">
+                        <span>{{ promo.created | formatDate }}</span>
+                      </div>
+                    </div>
+                  </ion-col>
+                  <ion-col no-padding>
+                    <div class="button-promo-wrapper" text-right>
+                      <button ion-button small color="default" 
+                        class="promo-button round" (click)="viewPromo(promo.promo_id)">{{ 'Detail'
+                        | translate }}</button>
+                    </div>
+                  </ion-col>
+                </ion-row>
+              </ion-grid>
+            </div>
+          </ion-card>
+        </ion-slide>
+      </ion-slides>
+    </div>
+  
+  
+    <div class="voucher-wrapper">
+      <div class="box-title-wrapper">
+        <ion-grid no-padding>
+          <ion-row no-padding>
+            <ion-col col-6 no-padding>
+              <div class="box-title">
+                {{ pageVoucherTitle | translate }}
+              </div>
+            </ion-col>
+            <ion-col col-6 no-padding>
+              <div class="box-more default" (click)="seeMoreVoucher()">
+                {{ 'Lihat Semua' | translate }}
+              </div>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </div>
+      <ion-slides #sliderVoucher *ngIf="voucherData && voucherData.length" pager="false" autoplayDisableOnInteraction="false">
+        <ion-slide *ngFor="let voucher of voucherData">
+          <div class="voucher-box">
+            <img class="voucher-image" src="{{ voucher.image_url }}" />
+            <div class="voucher-overlay"></div>
+            <div class="voucher-title-box row">
+              <div class="voucher-title col col-left">
+                <div class="voucher-name"> {{ voucher.name }} </div>
+              </div>
+              <div class="voucher-button col col-right">
+                <button ion-button small color="default" 
+                  (click)="viewVoucher(voucher.voucher_id)" class="voucher-btn round">{{ 'Detail'
+                  | translate }}</button>
+              </div>
+            </div>
+          </div>
+        </ion-slide>
+      </ion-slides>
+    </div>
+  
+    <div class="product-wrapper">
+      <div class="box-title-wrapper">
+        <ion-grid no-padding>
+          <ion-row no-padding>
+            <ion-col col-6 no-padding>
+              <div class="box-title">
+                {{ pageProductTitle | translate }}
+              </div>
+            </ion-col>
+            <ion-col col-6 no-padding>
+              <div class="box-more default" (click)="seeMoreProduct()">
+                {{ 'Lihat Semua' | translate }}
+              </div>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </div>
+      <ion-slides #sliderProduct *ngIf="productData && productData.length" speed="300" 
+        slidesPerView="2" pager="false" autoplayDisableOnInteraction="false">
+        <ion-slide *ngFor="let product of productData">
+          <ion-card class="card no-margin product-card" (click)="viewProductModal(product.product_id)">
+            <img src="{{ product.image_url }}" alt="" class="product-image full-image" />
+            <div class="padding-xs">
+              <ion-grid no-padding>
+                <ion-row no-padding>
+                  <ion-col no-padding>
+                    <div class="product-title-wrapper" text-left>
+                      <div class="product-title">{{ product.name }}</div>
+                      <div class="price">
+                        <span class="product-price">{{ product.price | formatCurrency }}</span>
+                      </div>
+                    </div>
+                  </ion-col>
+                </ion-row>
+              </ion-grid>
+            </div>
+          </ion-card>
+        </ion-slide>
+      </ion-slides>
+  
+    </div>
+  </div>
+
+  
+</ion-content>

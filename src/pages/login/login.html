@@ -1,0 +1,53 @@
+<div [class]="themes">
+  <ion-header></ion-header>
+  <ion-content fullscreen #LPContent [style.backgroundImage]="'url(' + loginBackground + ')'">
+    <div class="login-full-wrapper">
+      <div class="login-wrapper" padding>
+        <div class="login-logo-wrapper">
+          <div class="logo">
+            <span>{{ getName() | translate }}</span>
+          </div>
+        </div>
+    
+        <div class="login-content">
+          <form>
+            <div class="login-form">
+              <div class="app-title login-title">
+                <span class="default">{{ 'Login' | translate }}</span>
+              </div>
+              <ion-item transparent>
+                <ion-label floating>{{ 'Email' | translate }}</ion-label>
+                <ion-input type="text" [(ngModel)]="dataLogin.username" name="username"></ion-input>
+              </ion-item>
+              <ion-item transparent>
+                <ion-label floating>{{ 'Password' | translate }}</ion-label>
+                <ion-input type="password" [(ngModel)]="dataLogin.password" name="password"></ion-input>
+              </ion-item>
+              <div class="forgot-wrapper" (click)="goToForgot()">
+                <div text-right>
+                  <span class="default">{{ 'Lupa Password?' | translate }}</span>
+                </div>
+              </div>
+            </div>
+            <div class="login-button-wrapper">
+              <button ion-button block (click)="doLogin()" [color]="themes" 
+                class="login-button round">{{ 'Login' | translate }}</button>
+            </div> 
+          </form>
+        </div>
+        
+        <div class="signup-wrapper" *ngIf="have_register > 0">
+          <div text-center>
+            <span class="white">{{ "Tidak mempunyai akun?" | translate }}</span>
+          </div>
+          <button ion-button block clear (click)="goToSignup()"
+                class="register-button round">{{ 'Register' | translate }}</button>
+        </div>
+      </div>
+
+
+    </div>
+  </ion-content>
+</div>
+
+

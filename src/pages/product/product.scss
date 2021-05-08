@@ -1,0 +1,23 @@
+page-product {
+    [col-6] { padding: 10px; }
+    .card {
+        margin:0!important;
+        width:100%;
+    }
+    .full-image { height:auto }
+    .product-title-wrapper {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .product-title {
+        font-weight: 600;
+        overflow: hidden;
+        width: 140px;
+        height: 20px;
+    }
+    .text-muted {
+        color: #777;
+        font-size:90%;
+    }
+}

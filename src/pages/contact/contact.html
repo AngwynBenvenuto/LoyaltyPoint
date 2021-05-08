@@ -1,0 +1,23 @@
+<ion-header no-border [class]="themes">
+  <ion-navbar class="toolbar-page">
+    <ion-title>
+      {{ nameTitle | translate }}
+    </ion-title>
+    <ion-buttons end>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+<ion-content fullscreen #LPContent>
+  <div class="contact-wrapper {{themes}}" padding>
+    <div class="contact-title-wrapper">
+        <div class="contact-image">
+          <ion-icon color="default" name="icon-moon-contact-us" class="icon-large"></ion-icon>
+          <!-- <img src="../../assets/imgs/contactus.png" class="contact-full-image"/> -->
+        </div>
+        <div class="contact-heading">
+          <h4>{{ 'Kirim Pesan' | translate }}</h4>
+        </div>
+    </div>
+    <div class="contact-content" [innerHTML]="content"></div>
+  </div>
+</ion-content>

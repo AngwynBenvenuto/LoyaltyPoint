@@ -1,0 +1,20 @@
+<ion-header no-border [class]="themes">
+  <ion-navbar class="toolbar-page">
+    <ion-title>
+        {{ nameTitle | translate }}
+    </ion-title>
+    <ion-buttons end>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+<ion-content fullscreen #LPContent>
+  <div class="terms-wrapper {{themes}}" padding>
+    <div class="terms-title-wrapper">
+       <div class="terms-image">
+          <ion-icon color="default" name="icon-moon-termsconditions" class="icon-large"></ion-icon>
+       </div>
+    </div>
+    <div class="terms-content" [innerHTML]="content"></div>
+  </div>  
+</ion-content>
+  

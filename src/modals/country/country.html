@@ -1,0 +1,32 @@
+<ion-header>
+    <ion-navbar>
+        <ion-buttons left>
+            <button ion-button icon-only clear (click)="closeCountry()">
+                <ion-icon no-padding style="margin:0" 
+                    name="ios-close" color="pink"></ion-icon>
+            </button>
+        </ion-buttons>
+        <ion-title>{{ 'Country' | translate }}</ion-title>
+        <ion-buttons right>
+            <button ion-button icon-only clear (click)="saveCountry()">
+                <ion-icon no-padding style="margin:0" 
+                    name="ios-checkmark-outline" color="pink"></ion-icon>
+            </button>
+        </ion-buttons>
+    </ion-navbar>
+    <ion-toolbar mode="ios">
+        <ion-searchbar mode="ios" (ionInput)="filterCountry($event)"></ion-searchbar>
+    </ion-toolbar>
+    
+</ion-header>
+<ion-content>
+    <ion-list>
+        <ion-item *ngFor="let c of data_country" 
+            (click)="onChangeCountry(c.country_id, c.phone_code)">
+            {{ c.name }} ({{ c.phone_code }})
+            <ion-icon no-padding style="margin:0" item-right 
+                *ngIf="isSelected(c.country_id)" 
+                name="ios-checkmark-outline" color="primary"></ion-icon>
+        </ion-item>
+    </ion-list>
+</ion-content>

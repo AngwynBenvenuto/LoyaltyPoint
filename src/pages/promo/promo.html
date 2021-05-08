@@ -1,0 +1,49 @@
+<ion-content fullscreen #LPContent>
+  <div [class]="themes">
+    <div class="expandable-header" [style.backgroundImage]="'url(' + cmsHeader + ')'">
+      <div class="lp-app-name">{{ appName | translate }}</div>
+      <div class="header-title app-title">
+        <span>{{ pagePromoTitle | translate }}</span>
+      </div>
+      <div class="icon-lonceng" (tap)="goToNotification()">
+        <ion-icon name="icon-moon-notification" class="size-lonceng"></ion-icon>
+      </div>
+    </div>
+
+    <div class="promo-full-wrapper">
+      <div class="no-data" *ngIf="countItems == 0">
+        <div class="no-data-image"></div>
+      </div>
+
+      <div class="promo-wrapper" *ngIf="countItems > 0">
+        <ion-card class="card no-margin round" *ngFor="let promo of promoArray">
+          <img src="{{ promo.image_url || 'assets/imgs/no-image.jpg' }}" alt="" class="promo-image"/>
+          <div class="padding-xs">
+            <ion-grid no-padding>
+              <ion-row no-padding>
+                <ion-col no-padding>
+                  <div class="promo-title-wrapper" text-left>
+                    <div class="promo-title">{{ promo.name }}</div>
+                    <div class="time">
+                      <span>{{ promo.created | formatDate }}</span>
+                    </div>
+                  </div>
+                </ion-col>
+                <ion-col no-padding>
+                  <div class="button-promo" text-right>
+                    <button ion-button small (click)="viewPromo(promo.promo_id)"
+                      color="default" class="promo-button round">{{ 'Detail' | translate }}</button>
+                  </div>
+                </ion-col>
+              </ion-row>
+            </ion-grid> 
+          </div>
+        </ion-card>
+
+        <ion-infinite-scroll (ionInfinite)="doInfinite($event)">
+            <ion-infinite-scroll-content loadingSpinner="bubbles"></ion-infinite-scroll-content>
+        </ion-infinite-scroll>
+      </div>
+    </div>
+  </div>
+</ion-content>

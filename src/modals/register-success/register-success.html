@@ -1,0 +1,25 @@
+<ion-header transparent no-border>
+    <ion-navbar transparent>
+        <ion-title></ion-title>
+        <ion-buttons end>
+            <button ion-button (click)="close()">
+                <ion-icon name="ios-close-circle-outline" color="pink"></ion-icon>
+            </button>
+        </ion-buttons>
+    </ion-navbar>
+</ion-header>
+<ion-content>
+    <div class="register-success-wrapper">
+        <div class="register-success-box-title">
+            <div class="register-success-title">
+                <span>{{ title | translate }}</span>
+            </div>
+            <div class="register-success-message">{{ 'Silahkan konfirmasi email anda.' | translate }}</div>
+        </div>
+        <button ion-button block color="pink" 
+            class="register-success-button round"
+            (click)="confirmationEmail()">{{ 'Konfirmasi Email' | translate }}</button>
+
+    </div>
+</ion-content>
+      

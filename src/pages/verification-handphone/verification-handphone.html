@@ -1,0 +1,38 @@
+<ion-header transparent no-border [class]="themes">
+  <ion-navbar transparent>
+    <ion-title></ion-title>
+    <ion-buttons end>
+      <button ion-button (click)="close()">
+        <ion-icon name="ios-close-circle-outline" color="default"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+<ion-content>
+  <div class="verification-handphone-wrapper {{themes}}" padding>
+    <div class="verification-handphone-content">
+      <div class="verification-handphone-box-title">
+        <div class="verification-handphone-title">
+          <span>{{ 'Verifikasi Nomor Telepon' | translate }}</span>
+        </div>
+        <div class="verification-handphone-message">{{ 'Masukkan kode OTP yang didapatkan dinomor telepon anda.' | translate}}</div>
+      </div>
+      <form>
+        <ion-item transparent>
+          <ion-label floating>{{ 'Telepon' | translate }}</ion-label>
+          <ion-input type="text" [(ngModel)]="dataVerifyHandphone.phone" name="phone"></ion-input>
+        </ion-item>
+        <button ion-button block color="default" (click)="requestVerify()"
+          class="verification-handphone-button round">{{ 'Verifikasi Telepon' | translate }}</button>
+      </form>
+    </div>
+    <div class="verification-resent">
+      <div text-center>
+        <span>{{ 'Tidak mendapatkan kode dari sms?' | translate }} <a class="default" (click)="resendVerify()">{{ 'Klik disini untuk mengirim ulang kode.' | translate }}</a></span>
+      </div>
+    </div>
+
+  </div>
+  
+
+</ion-content>

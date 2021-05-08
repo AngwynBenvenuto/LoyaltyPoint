@@ -1,0 +1,61 @@
+$font-path: "../assets/fonts";
+$app-direction: ltr;
+
+//global import
+@import "ionic.globals";
+@import "ionic.theme.default";
+@import "ionic.ionicons";
+@import "cropper";
+
+// Fonts
+@import "roboto";
+@import "noto-sans";
+@import "fira-sans.scss";
+@import "yellow-pen.scss";
+@import "playfair-display.scss";
+@import "iconmoon.scss";
+
+
+$defaultcolor: #f06eaa;
+$defaultfont: "Fira Sans";
+$grey: rgb(129, 126, 126);
+$white: rgba(255, 255, 255, .8);
+$black: rgba(#000000, .8);
+$black-c: lighten($black, 40%);
+
+//color
+$colors: (
+  primary:    #488aff,
+  purple:     #6d1b7b,
+  secondary:  #32db64,
+  danger:     #f53d3d,
+  light:      #f4f4f4,
+  dark:       #222,
+  default:     $defaultcolor,
+  white:       #fff
+);
+
+//Font Variable
+$font-family-base: $defaultfont;
+$font-family-ios-base: $font-family-base;
+$font-family-md-base: $font-family-base;
+$font-family-wp-base: $font-family-base;
+
+//Tabs
+$tabs-md-tab-text-transform-active: none;
+$tabs-md-tab-icon-transform-active: none;
+$tabs-background: $white;
+$tabs-md-background: $white;
+$tabs-ios-background: $white;
+$tabs-md-tab-icon-color: $grey;
+$tabs-md-tab-icon-color-active: $defaultcolor;
+$tabs-md-tab-text-color: $grey;
+$tabs-md-tab-text-color-active: $defaultcolor;
+$tabs-ios-tab-icon-color: $grey;
+$tabs-ios-tab-icon-color-active: $defaultcolor;
+$tabs-ios-tab-text-color: $grey;
+$tabs-ios-tab-text-color-active: $defaultcolor;
+
+//Text input
+$text-input-highlight-color-valid: none;
+$text-input-highlight-color-invalid: none;

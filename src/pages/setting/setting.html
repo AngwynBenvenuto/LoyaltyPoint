@@ -1,0 +1,55 @@
+<ion-content fullscreen #LPContent>
+  <div [class]="themes">
+    <div class="expandable-header" [style.backgroundImage]="'url(' + cmsHeader + ')'">
+      <div class="lp-app-name">{{ appName | translate }}</div>
+      <div class="header-title app-title">
+        <span>{{ pageSettingTitle | translate }}</span>
+      </div>
+      <div class="icon-lonceng" (tap)="goToNotification()">
+        <ion-icon name="icon-moon-notification" color="white" class="size-lonceng"></ion-icon>
+      </div>
+    </div>
+    
+    <div class="profile-wrapper">
+      <div class="profile-box-wrapper">
+        <div class="profile-img-box">
+          <div class="profile-img">
+            <img src="{{ dataProfile?.profile_image || 'assets/imgs/no-profile.jpg' }}" />
+          </div>
+        </div>
+        <div class="profile-name-box">
+          <div class="profile-name">
+            {{ dataProfile?.name }}
+            <div>
+              <button ion-button small [color]="themes" class="profile-button round" 
+                (click)="doEditProfile()">
+                {{ 'Edit Profile' | translate }}
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="point-box-wrapper">
+        <div class="point-box" (click)="goToHistory()">
+          <div class="point-bold">{{ dataProfile?.point_balance | number }} {{ 'Poin' | translate }}</div>
+        </div>
+      </div>
+      <div style="clear:both"></div>
+    </div>
+
+    <div class="setting-wrapper" padding>
+      <ion-list>
+        <ion-item *ngFor="let item of itemArray" (click)="goToPage(item.page)">
+          <ion-icon name="{{ item.icon }}" item-start color="default"></ion-icon>
+          {{ item.name }}
+        </ion-item>
+      </ion-list>
+    </div>
+    
+    <div class="button-wrapper" padding>
+      <button ion-button block clear class="logout-button default" (click)="logout()">
+          <ion-icon name="icon-moon-logout" color="default"></ion-icon> <span class="logout-title">{{ 'Logout' | translate }}</span>
+      </button>
+    </div>
+  </div>
+</ion-content>

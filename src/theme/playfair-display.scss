@@ -1,0 +1,41 @@
+@font-face {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: normal;
+    src: url("../assets/fonts/PlayfairDisplay/PlayfairDisplay-Regular.eot");
+    src: local("PlayfairDisplay-Regular"),
+         url("../assets/fonts/PlayfairDisplay/PlayfairDisplay-Regular.eot") format("embedded-opentype"),
+         //url("../assets/fonts/PlayfairDisplay/PlayfairDisplay-Regular.woff") format("woff"),
+         url("../assets/fonts/PlayfairDisplay/PlayfairDisplay-Regular.ttf") format("truetype");
+}
+@font-face {
+    font-family: 'Playfair Display';
+    font-style: italic;
+    font-weight: normal;
+    src: url("../assets/fonts/PlayfairDisplay/PlayfairDisplay-Italic.eot");
+    src: local("PlayfairDisplay-Italic"),
+         url("../assets/fonts/PlayfairDisplay/PlayfairDisplay-Italic.eot") format("embedded-opentype"),
+         //url("../assets/fonts/PlayfairDisplay/PlayfairDisplay-Italic.woff") format("woff"),
+         url("../assets/fonts/PlayfairDisplay/PlayfairDisplay-Italic.ttf") format("truetype");
+}
+@font-face {
+    font-family: 'Playfair Display';
+    font-style: bold;
+    font-weight: bold;
+    src: url("../assets/fonts/PlayfairDisplay/PlayfairDisplay-Bold.eot");
+    src: local("PlayfairDisplay-Bold"),
+         url("../assets/fonts/PlayfairDisplay/PlayfairDisplay-Bold.eot") format("embedded-opentype"),
+         //url("../assets/fonts/PlayfairDisplay/PlayfairDisplay-Bold.woff") format("woff"),
+         url("../assets/fonts/PlayfairDisplay/PlayfairDisplay-Bold.ttf") format("truetype");
+}
+// @font-face {
+//     font-family: 'Playfair Display';
+//     font-style: normal;
+//     font-weight: normal;
+//     src: url("../assets/fonts/PlayfairDisplay/PlayfairDisplay-Black.ttf");
+//     src: local("PlayfairDisplay-Black"),
+//          //url("../assets/fonts/PlayfairDisplay/PlayfairDisplay-Black.eot") format("embedded-opentype"),
+//         // url("../assets/fonts/PlayfairDisplay/PlayfairDisplay-Black.woff") format("woff"),
+//          url("../assets/fonts/PlayfairDisplay/PlayfairDisplay-Black.ttf") format("truetype");
+// }
+

@@ -1,0 +1,39 @@
+<ion-content padding class="main-view">
+    <div class="overlay"></div>
+    <div class="modal_content">
+        <!-- <div class="circle">
+            <ion-icon name="ios-close" color="white" class="icon-modal" (click)="close()"></ion-icon>
+        </div> -->
+        <div class="modal-content">
+            <div class="updateapp-wrapper">
+                <div class="updateapp-title">
+                    {{ 'Application Update' | translate }}
+                </div>
+                <div class="updateapp-message">
+                    <p>{{ 'A new version of this application is available.' | translate }}</p>
+                </div>
+
+                <div class="updateapp-button">
+                    <button ion-button clear (click)="update()" float-right>{{ 'Update' | translate }}</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</ion-content>
+<!-- <ion-header>
+    <ion-navbar>
+        <ion-title>{{ 'Application Update' | translate }}</ion-title>
+    </ion-navbar>
+</ion-header>
+<ion-content>
+    <div class="content-wrapper">
+        <div class="message-wrapper" style="padding:5px">
+            <p>{{ 'A new version of this application is available.' | translate }}</p>
+        </div>
+    </div>
+</ion-content>
+<ion-footer mode="ios">
+    <ion-buttons right>
+        <button ion-button clear (click)="update()">{{ 'Update' | translate }}</button>
+    </ion-buttons>
+</ion-footer> -->

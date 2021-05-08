@@ -1,0 +1,46 @@
+<ion-header no-border>
+  <ion-navbar color="pink">
+    <ion-title>{{ dataProduct?.name }}</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content fullscreen #LPContent>
+  <div class="product-full-wrapper">
+    <div class="no-data" *ngIf="dataFound == false">
+      <div class="no-data-image"></div>
+    </div>
+
+    <div class="product-wrapper">
+      <div class="product-image-wrapper" (click)="viewImage(dataProduct?.image_url)">
+        <background-image tappable class="product-image"
+          [src]="dataProduct?.image_url || 'assets/imgs/no-image.jpg'"></background-image>
+      </div>
+      <div class="product-content">
+        <h3 class="product-heading">{{ dataProduct?.name || '-' }}</h3>
+        <div class="product-info">
+          <ion-row class="product-sellprice" no-padding>
+            <ion-col no-padding>
+              <span>Rp {{ dataProduct?.sell_price | number }}</span>
+            </ion-col>
+          </ion-row>
+          <ion-row class="product-created" no-padding>
+            <ion-col no-padding>
+              <div class="time">
+                <span>{{ dataProduct?.created || '-' }}</span>
+              </div>
+            </ion-col>
+          </ion-row>
+          <ion-row class="product-description" no-padding>
+            <ion-col no-padding>
+              <div class="product-description-heading">{{ 'Deskripsi' | translate }}</div>
+              <p [innerHTML]="dataProduct?.description || '-'" class="desc"></p>
+            </ion-col>
+          </ion-row>
+        </div>
+        
+      </div>
+  
+    </div>
+  </div>
+
+
+</ion-content>

@@ -1,0 +1,32 @@
+.beauty{
+    .tabs-md .tab-button[aria-selected=true],
+    .tabs-md .tab-button[aria-selected=true] .tab-button-icon,
+    .tabs-ios .tab-button[aria-selected=true] .tab-button-icon {
+        color: #f06eaa; /*your  text color */
+        //background: #808080; /* your background color*/
+    }
+}
+.tasty{
+    .tabs-md .tab-button[aria-selected=true],
+    .tabs-md .tab-button[aria-selected=true] .tab-button-icon,
+    .tabs-ios .tab-button[aria-selected=true] .tab-button-icon {
+        color: #005952; /*your  text color */
+        //background: #808080; /* your background color*/
+    }
+}
+.professional{
+    .tabs-md .tab-button[aria-selected=true],
+    .tabs-md .tab-button[aria-selected=true] .tab-button-icon,
+    .tabs-ios .tab-button[aria-selected=true] .tab-button-icon {
+        color: #9e0b0f; /*your  text color */
+        //background: #808080; /* your background color*/
+    }
+}
+.excellent{
+    .tabs-md .tab-button[aria-selected=true],
+    .tabs-md .tab-button[aria-selected=true] .tab-button-icon,
+    .tabs-ios .tab-button[aria-selected=true] .tab-button-icon {
+        color: #fecb17; /*your  text color */
+        //background: #808080; /* your background color*/
+    }
+}

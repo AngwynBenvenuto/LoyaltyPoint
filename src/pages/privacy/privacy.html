@@ -1,0 +1,21 @@
+<ion-header no-border [class]="themes">
+  <ion-navbar class="toolbar-page">
+    <ion-title>
+      {{ nameTitle | translate }}
+    </ion-title>
+    <ion-buttons end>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+<ion-content fullscreen #LPContent>
+  <div class="privacy-wrapper {{themes}}" padding>
+    <div class="privacy-title-wrapper">
+        <div class="privacy-image">
+          <ion-icon color="default" name="icon-moon-privacypolicy" class="icon-large"></ion-icon>
+          <!-- <img src="../../assets/imgs/privacy_policy.png" class="privacy-full-image"/> -->
+        </div>
+    </div>
+    <div class="privacy-content" [innerHTML]="content"></div>
+  </div>
+</ion-content>
+  

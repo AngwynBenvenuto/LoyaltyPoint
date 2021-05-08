@@ -1,0 +1,29 @@
+page-product-detail-modal {
+    .product-detail-content { padding:10px; }
+    .product-image-wrapper {
+        position:relative;
+        padding-bottom:0!important;
+
+        .product-detail-image {
+            background-position:0% 0%;
+            background-size: cover;
+            height:auto;
+            object-fit: contain;
+            background-color: rgba($black-c, .6);
+            padding-bottom:0!important;
+            margin:0;
+            width:100%;
+
+            .bg-overlay { background-color: rgba($black-c, .6); }
+            ion-spinner { z-index: 2; }
+        }
+    }
+    .button-close, .button-close:active,
+    .button-close:hover, .button-close:visited,
+    .button-close.active {
+        position: absolute;
+        z-index: 9999;
+        background: transparent;
+    }
+    h6 { margin:0; }
+}

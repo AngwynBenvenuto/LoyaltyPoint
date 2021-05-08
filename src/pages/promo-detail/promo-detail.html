@@ -1,0 +1,40 @@
+<ion-content fullscreen #LPContent>
+  <div class="promo-full-wrapper">
+    <div class="no-data" *ngIf="dataFound == false">
+      <div class="no-data-image"></div>
+    </div>
+   
+    <button ion-button clear icon-only class="button-close" (click)="close()">
+      <ion-icon name="md-arrow-back" color="white"></ion-icon>
+    </button>
+   
+    <div class="promo-wrapper">
+      <div class="promo-image-wrapper">
+        <img class="promo-image" [src]="dataPromo?.image_url || 'assets/imgs/no-image.jpg'" />
+      </div>
+      <div class="promo-content">
+        <h6 class="">{{ dataPromo?.name || '-' }}</h6>
+        <div class="promo-info">
+          <ion-row class="promo-created" no-padding>
+            <ion-col no-padding>
+              <div class="time">
+                <span>{{ dataPromo?.created | formatDate }}</span>
+              </div>
+            </ion-col>
+          </ion-row>
+          <ion-row class="promo-description" no-padding>
+            <ion-col no-padding>
+             
+              <p [innerHTML]="dataPromo?.description || '-'" class="desc"></p>
+            </ion-col>
+          </ion-row>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+
+
+</ion-content>

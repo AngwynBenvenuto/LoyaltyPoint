@@ -1,0 +1,57 @@
+page-verification-email {
+    .verification-box-title{
+        text-align:center;
+        margin:0 auto;
+    }
+    .verification-title{
+        font-size: 14px;
+        font-weight:bold;
+        color:#000;
+    }
+    .verification-message{
+        color:#888;
+        font-size:12px;
+        display:block;
+    }
+    .verification-button{margin-top:25px;}
+    .verification-email{margin-top: 20px;}
+
+
+    //
+    .beauty{
+        .verification-button, .verification-button:active,
+        .verification-button:focus, .verification-button:visited,
+        .verification-button:hover {
+            color:#fff;
+            background:#f06eaa;
+            border:none;
+        }
+    }
+    .tasty{
+        .verification-button, .verification-button:active,
+        .verification-button:focus, .verification-button:visited,
+        .verification-button:hover {
+            color:#fff;
+            background:#005952;
+            border:none;
+        }
+    }
+    .professional{
+        .verification-button, .verification-button:active,
+        .verification-button:focus, .verification-button:visited,
+        .verification-button:hover {
+            color:#fff;
+            background:#9e0b0f;
+            border:none;
+        }
+    }
+    .excellent{
+        .verification-button, .verification-button:active,
+        .verification-button:focus, .verification-button:visited,
+        .verification-button:hover,  {
+            color:#fff;
+            background:#fecb17;
+            border:none;
+        }
+    }
+}

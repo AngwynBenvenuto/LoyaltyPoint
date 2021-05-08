@@ -1,0 +1,105 @@
+page-profile-edit {
+    .profile-edit-wrapper{
+        padding:0;
+        position:relative;
+    }
+    .profile-edit-button { margin-top:40px; }
+
+    //profile image box
+    .user-image-content
+    {
+        width: 100%;
+        display: block;
+        height: 40px;
+        padding: 0!important;
+        background-color: $white;
+
+        .user-image-row
+        {     
+            position:relative;
+            top:-50px;  
+
+            .user-image {
+                width:80px;
+                height:80px;
+                border-radius: 100%;
+                border:1px solid #ccc;
+                position:relative;
+                margin:0 auto;
+                padding-bottom:0!important;
+                img{
+                    width:100%;
+                    padding-bottom:0!important;
+                }
+            }
+            .image-web-action {
+                visibility: hidden;
+                height: 0px;
+                overflow: hidden;
+                display: block;
+            }
+            .image-action
+            {
+                font-size: 12px;
+                line-height: 1.5;
+                text-align: center;
+                color: #fff;
+                display:block;
+                position:absolute;
+                bottom:0;
+                left:40px;
+                right:0;
+                width:20px;
+                height:20px;
+                border-radius:100%;
+                margin: 0px auto 5px auto;
+                font-weight: 400;
+            }
+        }
+    }
+    .profile-edit-form { padding:10px; }
+    
+
+    
+    //theme
+    .beauty{
+        .profile-edit-button, .profile-edit-button:active,
+        .profile-edit-button:focus, .profile-edit-button:visited,
+        .profile-edit-button:hover{
+            color:#fff;
+            background:#f06eaa;
+            border:none;
+        }
+        .image-action { background-color: #f06eaa }
+    }
+    .tasty{
+        .profile-edit-button, .profile-edit-button:active,
+        .profile-edit-button:focus, .profile-edit-button:visited,
+        .profile-edit-button:hover{
+            color:#fff;
+            background:#005952;
+            border:none;
+        }
+        .image-action { background-color: #005952 }
+    }
+    .professional{
+        .profile-edit-button, .profile-edit-button:active,
+        .profile-edit-button:focus, .profile-edit-button:visited,
+        .profile-edit-button:hover{
+            color:#fff;
+            background:#9e0b0f;
+            border:none;
+        }
+        .image-action { background-color: #9e0b0f }
+    }
+    .excellent{
+        .profile-edit-button, .profile-edit-button:active,
+        .profile-edit-button:focus, .profile-edit-button:visited,
+        .profile-edit-button:hover{
+            color:#fff;
+            background:#fecb17;
+            border:none;
+        }
+        .image-action { background-color: #fecb17 }
+    }
+}

@@ -1,0 +1,82 @@
+page-register {
+    .register-button {  margin-top:25px; }
+    .div-login-wrapper {
+        margin-top:30px;
+    }
+
+
+    
+    //
+    .beauty{
+        .register-button, .register-button:active,
+        .register-button:focus, .register-button:visited,
+        .register-button:hover {
+            color:#fff;
+            background:#f06eaa;
+            border:none;
+        }
+        .toolbar-page .bar-button-default-md, .toolbar-page .toolbar-title-md,
+        .bar-button-default-md, .bar-button-clear-md-default, .bar-button-md-default,
+        .bar-button-default-md:focus, .bar-button-clear-md-default:focus, .bar-button-md-default:focus,
+        .bar-button-default-md:visited, .bar-button-clear-md-default:visited, .bar-button-md-default:visited,
+        .bar-button-default-md:hover, .bar-button-clear-md-default:hover, .bar-button-md-default:hover,
+        .bar-button-default-md:active, .bar-button-clear-md-default:active, .bar-button-md-default:active{
+            color:#f06eaa;
+        }
+        .default{ color: #f06eaa}
+    }
+    .tasty{
+        .register-button, .register-button:active,
+        .register-button:focus, .register-button:visited,
+        .register-button:hover {
+            color:#fff;
+            background:#005952;
+            border:none;
+        }
+        .toolbar-page .bar-button-default-md, .toolbar-page .toolbar-title-md,
+        .bar-button-default-md, .bar-button-clear-md-default, .bar-button-md-default,
+        .bar-button-default-md:focus, .bar-button-clear-md-default:focus, .bar-button-md-default:focus,
+        .bar-button-default-md:visited, .bar-button-clear-md-default:visited, .bar-button-md-default:visited,
+        .bar-button-default-md:hover, .bar-button-clear-md-default:hover, .bar-button-md-default:hover,
+        .bar-button-default-md:active, .bar-button-clear-md-default:active, .bar-button-md-default:active{
+            color:#005952;
+        }
+        .default{ color: #005952}
+    }
+    .professional{
+        .register-button, .register-button:active,
+        .register-button:focus, .register-button:visited,
+        .register-button:hover {
+            color:#fff;
+            background:#9e0b0f;
+            border:none;
+        }
+        .toolbar-page .bar-button-default-md, .toolbar-page .toolbar-title-md,
+        .bar-button-default-md, .bar-button-clear-md-default, .bar-button-md-default,
+        .bar-button-default-md:focus, .bar-button-clear-md-default:focus, .bar-button-md-default:focus,
+        .bar-button-default-md:visited, .bar-button-clear-md-default:visited, .bar-button-md-default:visited,
+        .bar-button-default-md:hover, .bar-button-clear-md-default:hover, .bar-button-md-default:hover,
+        .bar-button-default-md:active, .bar-button-clear-md-default:active, .bar-button-md-default:active{
+            color:#9e0b0f;
+        }
+        .default{ color: #9e0b0f}
+    }
+    .excellent{
+        .register-button, .register-button:active,
+        .register-button:focus, .register-button:visited,
+        .register-button:hover {
+            color:#fff;
+            background:#fecb17;
+            border:none;
+        }
+        .toolbar-page .bar-button-default-md, .toolbar-page .toolbar-title-md,
+        .bar-button-default-md, .bar-button-clear-md-default, .bar-button-md-default,
+        .bar-button-default-md:focus, .bar-button-clear-md-default:focus, .bar-button-md-default:focus,
+        .bar-button-default-md:visited, .bar-button-clear-md-default:visited, .bar-button-md-default:visited,
+        .bar-button-default-md:hover, .bar-button-clear-md-default:hover, .bar-button-md-default:hover,
+        .bar-button-default-md:active, .bar-button-clear-md-default:active, .bar-button-md-default:active{
+            color:#fecb17;
+        }
+        .default{ color: #fecb17}
+    }
+}

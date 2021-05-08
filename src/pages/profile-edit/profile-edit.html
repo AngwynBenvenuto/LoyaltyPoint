@@ -1,0 +1,74 @@
+<ion-content fullscreen #LPContent>
+  <div [class]="themes">
+    <div class="expandable-header" [style.backgroundImage]="'url(' + cmsHeader + ')'">
+      <div class="lp-app-name">{{ appName | translate }}</div>
+      <div class="header-title app-title">
+        <span>{{ nameTitle | translate }}</span>
+      </div>
+    </div>
+  
+    <div class="profile-edit-wrapper">
+      <div class="user-image-content">
+        <ion-row class="user-image-row">
+          <ion-col width-40 text-center>
+            <preload-image class="user-image"
+              [src]="dataProfile.image || 'assets/imgs/no-profile.jpg'"
+              [ratio]="{w:1, h:1}" ></preload-image>
+            <input #fileInput type="file" class="image-web-action"
+              name="file" (change)="uploadImageWeb($event)" accept="image/*">
+            <button ion-button small class="image-action"
+              (click)="changePic()">
+              <ion-icon name="ios-camera"></ion-icon>
+            </button>
+          </ion-col>
+        </ion-row>
+      </div>
+  
+  
+      <div class="profile-edit-form">
+        <form>
+          <ion-item transparent>
+            <ion-label floating>{{ 'Nama User' | translate }} <span class="error">*</span></ion-label>
+            <ion-input type="text" [(ngModel)]="dataProfile.name" name="name"></ion-input>
+          </ion-item>
+          <ion-item transparent>
+            <ion-label floating>{{ 'Email' | translate }} </ion-label>
+            <ion-input type="text" [(ngModel)]="dataProfile.email" name="email" readonly></ion-input>
+          </ion-item>
+          <ion-item transparent>
+              <ion-label floating>{{ 'Alamat' | translate }} </ion-label>
+              <ion-textarea  [(ngModel)]="dataProfile.address" name="address"></ion-textarea>
+          </ion-item>
+          <ion-item transparent>
+              <ion-label floating>{{ 'Kota' | translate }} </ion-label>
+              <ion-input  [(ngModel)]="dataProfile.kota" name="kota"></ion-input>
+          </ion-item>
+          <ion-item transparent>
+            <ion-label floating>{{ 'Tanggal lahir' | translate }} </ion-label>
+            <ion-datetime ion-datepicker name="tanggal_lahir" displayFormat="DD/MM/YYYY" [value]="valueDate"
+                [(ngModel)]="dataProfile.tanggal_lahir" [min]="minDate" [max]="maxDate" (ionChanged)="setDateBirth($event);"></ion-datetime>
+          </ion-item>
+          <ion-item transparent>
+            <ion-label floating>{{ 'Telepon' | translate }} <span class="error">*</span></ion-label>
+            <ion-input type="tel"  [(ngModel)]="dataProfile.phone" name="phone"></ion-input>
+          </ion-item>
+          <ion-item transparent>
+              <ion-label floating>{{ 'Password Lama' | translate }} </ion-label>
+              <ion-input type="password"  [(ngModel)]="dataProfile.old_password" name="old_password"></ion-input>
+            </ion-item>
+          <ion-item transparent>
+            <ion-label floating>{{ 'Password Baru' | translate }} </ion-label>
+            <ion-input type="password"  [(ngModel)]="dataProfile.new_password" name="new_password"></ion-input>
+          </ion-item>
+          <ion-item transparent>
+            <ion-label floating>{{ 'Konfirmasi Password' | translate }} </ion-label>
+            <ion-input type="password"  [(ngModel)]="dataProfile.confirm_password" name="confirm_password"></ion-input>
+          </ion-item>
+          <button ion-button block color="default"
+            class="profile-edit-button round" (click)="editProfile()">{{ 'Save' | translate }}</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+</ion-content>

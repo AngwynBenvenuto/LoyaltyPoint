@@ -1,0 +1,36 @@
+<ion-content fullscreen #LPContent>
+    <div class="product-full-wrapper">
+        <div class="no-data" *ngIf="dataFound == false">
+            <div class="no-data-image"></div>
+        </div>
+
+        <button ion-button clear icon-only class="button-close" (click)="close()">
+            <ion-icon name="md-arrow-back" color="white"></ion-icon>
+        </button>
+
+        <div class="product-detail-wrapper">
+            <div class="product-image-wrapper">
+                <img class="product-detail-image" [src]="dataProduct?.image_url || 'assets/imgs/no-image.jpg'" />
+            </div>
+            <div class="product-detail-content">
+                <h6 class="product-detail-heading">{{ dataProduct?.name || '-' }}</h6>
+                <div class="product-detail-info">
+                    <ion-row class="product-detail-price" no-padding>
+                        <ion-col no-padding>
+                                <span>{{ dataProduct?.sell_price || '-' | formatCurrency }}</span>
+                        </ion-col>
+                    </ion-row>
+                    
+                    <ion-row class="product-detail-description" no-padding>
+                        <ion-col no-padding>
+                            
+                            <p [innerHTML]="prettyPrint(dataProduct?.description) || '-'" class="desc"></p>
+                        </ion-col>
+                    </ion-row>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</ion-content>

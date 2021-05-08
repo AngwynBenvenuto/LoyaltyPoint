@@ -1,0 +1,32 @@
+<ion-header no-border>
+  <ion-navbar color="pink">
+    <ion-title></ion-title>
+    <ion-buttons end>
+      <button ion-button (click)="close()">
+        <ion-icon name="ios-close-circle-outline" ></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+<ion-content>
+  <div class="verification-resend-wrapper" padding>
+    <div class="verification-resend-content">
+      <div class="verification-resend-box-title">
+        <div class="verification-resend-title">
+          <span>{{ 'Verify your email here. ' | translate }}</span>
+        </div>
+        <div class="verification-resend-message">Test message</div>
+      </div>
+      <form>
+        <ion-item transparent>
+          <ion-label floating>{{ 'Email' | translate }}</ion-label>
+          <ion-input type="text" [(ngModel)]="dataVerifyResendEmail.email" name="email"></ion-input>
+        </ion-item>
+        <button ion-button block color="pink" (click)="requestVerify()"
+          class="verification-resend-button round">{{ 'Verify Email' | translate }}</button>
+      </form>
+    </div>
+  </div>
+  
+
+</ion-content>

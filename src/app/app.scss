@@ -1,0 +1,619 @@
+//global setting
+*, html, body { box-shadow: none }
+.round { border-radius: 20px }
+.padding-xs {padding: 10px}
+.app-title { 
+    font-size: 25px;
+    font-weight:bold; 
+}
+.transparent { background: transparent !important; }
+.md button, .ios button { text-transform: none; box-shadow: none!important }
+.card, .card-ios, .card-wp, .card-md {
+    background: #FFF;
+    -webkit-box-shadow: 2px 2px 10px 2px rgba(0,52,113,0.25);
+    -moz-box-shadow: 2px 2px 10px 2px rgba(0,52,113,0.25);
+    box-shadow: 2px 2px 10px 2px rgba(0,52,113,0.25);
+}
+.card-ios, .card-md { margin: 10px 0 10px 10px }
+.full-image{
+    width:100%;
+    height:100%;
+	display:block;
+    background-position:50% 50%;
+    background-size:contain;
+    object-fit:cover;
+}
+.icon-large { font-size: 25px; zoom: 2 }
+.button-small-md {
+    height: 1.8em;
+    font-size: 1.1rem;
+    padding: 0 0.9em;
+}
+.success { color: green }
+.warning{ color: yellow }
+.danger, .error{color: red}
+.error { 
+    font-size: 0.9em;
+    padding:3px;
+    margin:0;
+}
+.white { color: #fff }
+
+//list
+.list-ios, .list-md { margin: 0 }
+.item-md, .item-ios {
+    background:none;
+    padding-left:0px;
+    padding-right:0px;
+}
+.bar-button-default-ios, 
+.bar-button-default.bar-button-ios-default, 
+.bar-button-clear-ios-default {
+    color: #424242
+}
+.list-ios > .item-block:first-child,
+.list-ios > .item-block:last-child, 
+.list-ios > .item-wrapper:last-child .item-block{
+    border:none!important
+}
+.list-md .item-input:last-child{ border:none }
+.item-md.item-block .item-inner{ padding:0 }
+
+
+//title
+.toolbar-ios ion-title{ padding: 0 }
+.toolbar-title{
+    text-overflow: unset;
+    white-space: unset
+}
+.lp-app-name {
+    font-size: 30px;
+    font-family: 'Yellow Pen';
+    overflow: hidden;
+    color: #fff;
+    float: left;
+    width: 50%;
+    position: absolute;
+    left: 10px;
+    top: 5px;
+}
+
+//modal
+.modal-wrapper {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+@media not all and (min-height: 600px) and (min-width: 768px) {
+	ion-modal ion-backdrop {
+		visibility: hidden;
+	}
+}
+@media only screen and (min-height: 0px) and (min-width: 0px) {
+	.modal-wrapper {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+}
+.main-view{
+	background: transparent;
+}
+.overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	opacity: .5;
+	background-color: #333;
+}
+.modal_wrapper > .scroll-content { display:flex; align-items: center }
+.modal_content {
+	display: block;
+	position: relative;
+	left: 0;
+	right: 0;
+	width: 100%;
+	padding: 0px;
+	z-index: 1;
+	margin: 0 auto;
+	color: #333;
+	background: #e8e8e8;
+	background: -moz-linear-gradient(top, #fff 0%, #e8e8e8 100%);
+	background: -webkit-linear-gradient(top, #fff 0%, #e8e8e8 100%);
+	background: linear-gradient(to bottom, #fff 0%, #e8e8e8 100%);
+	border-radius: 5px;
+	box-shadow: 0 2px 3px rgba(51, 51, 51, .35);
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	overflow: hidden;
+}
+.circle{
+	position: absolute;
+	height: 25px;
+	width: 25px;
+	border-radius: 100%;
+	right: 5px;
+	top: 5px;
+	padding: 5px;
+	background: #ddd;
+	z-index: 999999;
+	text-align: center;
+}
+.fullscreen-image {
+	max-width: 100%;
+	max-height: 100%;
+}
+ion-icon{ font-size: 1.5em; }
+ion-modal{
+    &.my-fullscreen{
+        .modal-wrapper {
+			position: absolute;
+			display: block;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+    }
+}
+.icon-modal{
+    position: relative;
+    top: -3px;
+    bottom: 0;
+}
+
+
+.icon-lonceng{
+    float: right;
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    
+    .size-lonceng {
+        font-size: 25px
+    }
+}
+
+
+//toast message
+.toast-material {
+    width:100%;
+    position:fixed;
+    bottom:15%;
+    left:0;
+
+    .toast-wrapper {
+        width:80%;
+        margin-left:auto;
+        margin-right:auto;
+        background-color:#303437;
+        border-radius: 2px;
+        margin:0 auto;
+        opacity:.95;
+        -webkit-box-shadow:1px 2px 2px 1px rgba(34,34,34,1);
+        box-shadow:1px 2px 2px 1px rgba(34,34,34,1);
+    }
+
+    .toast-message {
+        font-size:11px;
+        word-wrap: break-word;
+        color:#f5f5f5;
+    }
+}
+  
+
+//scroll
+::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+  }
+::-webkit-scrollbar-thumb {background: transparent;}
+
+
+//profile box
+.profile-wrapper{
+    background:transparent;
+    position:relative;
+}
+.profile-box-wrapper{
+    overflow: hidden;
+    width: 180px;
+    float: left;
+}
+.profile-img-box{
+    overflow: hidden;
+    position: absolute;
+    top: -30px;
+    left: 20px;
+}
+.profile-img{
+    border-radius:100%;
+    display:block;
+    text-align:center;
+    position:relative;
+    overflow:hidden;
+    width: 65px;
+    height: 65px;
+    border:1px solid #e2e2e2;
+}
+.profile-name-box{
+    position: relative;
+    margin: 0 auto;
+    height: 60px;
+    float: left;
+    width: 55%;
+    left: 90px;
+}
+.profile-name{
+    position: relative;
+    font-size: 18px;
+    font-weight: 900;
+    color: #000;
+    top: 0;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+.profile-button{
+    background:white;
+    border:1px solid #e2e2e2;
+    font-weight:normal;
+    font-size: 9px;
+    width:80%;
+    margin:5px auto;
+    padding:0;
+}
+.upload-img {
+    background:transparent url('../../assets/imgs/camera.png') no-repeat;
+    background-size:contain;
+    background-position:center center;
+    width: 11px;
+    height: 11px;
+    position: absolute;
+    margin: 0 auto;
+    left: 4px;
+    top: 4px;
+}
+
+//point box
+.point-box-wrapper{
+    position: relative;
+    overflow: hidden;
+    top: 5px;
+    right: 0;
+    float: right;
+    width: 100px;
+    height:60px
+}
+.point-box{
+    position: relative;
+    left: 25px;
+    width: 60px;
+    height:100%;
+    top: 2px;
+    overflow: hidden;
+}
+.point-bold{
+    font-size: 12px;
+    color: #000;
+    padding: 0;
+    position: relative;
+    top: 4px;
+}
+
+//no data
+.no-data{
+    width:100%;
+    height:100%;
+    position: absolute;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    background:transparent;
+    color:#555;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.no-data-image{
+    background:url('../../assets/imgs/NoRecordFound.png') no-repeat center center;
+    background-size:cover;
+    object-fit: contain;
+    width:100%;
+    height:200px;
+}
+
+
+//icon point
+.icon-point { padding-left:20px }
+.point-box-wrapper:before,
+.icon-point:before,
+.voucher-point span:before,
+.history-recent-point:before {
+    background: transparent url('../../assets/imgs/point.png') no-repeat;
+    background-size:contain;
+    background-position:center center;
+    object-fit: contain;
+}
+.point-box-wrapper:before{
+    content:'';
+    position:absolute;
+    width:20px;
+    height:20px;
+    left:0;
+    top:3px;
+    margin:0 auto;
+    border-radius:100%;
+}
+.icon-point:before {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    left: 0;
+    top:1px;
+    margin: 0 auto;
+    border-radius: 100%;
+}
+.voucher-point span:before {
+    content:'';  
+    position:absolute;
+    width:10px;
+    height:10px;
+    bottom:2px;
+    left:-15px;
+    margin:0 auto;
+}
+.history-recent-point:before {
+    content:'';
+    position:absolute;
+    width:15px;
+    height:15px;
+    bottom:0;
+    left:0px;
+    margin:0 auto;
+}
+
+//icon time
+.time{
+    font-size: 13px;
+    color: #000;
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+.time span { position:relative; left: 20px }
+.time:before {
+    content:'';
+    position:absolute;
+    width:15px;
+    height:15px;
+    bottom:0;
+    left:0;
+    margin:0 auto;
+}
+
+
+//header box
+.expandable-header{
+    background-color:#333;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
+    object-fit: contain;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    width:100%;
+    height:100px;
+    position: relative;
+    top:0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:#fff;
+    overflow: hidden;
+
+    .header-title {
+        position:absolute;
+        text-align: center;
+        margin:0 auto;
+        bottom:10px;
+        font-size: 20px;     
+        font-weight: bold;
+    }
+    .home-only{
+        left:90px;
+        bottom:0px;
+    }
+}
+
+
+//icon camera upload
+.upload-img-box{
+    position:absolute;
+    width:20px;
+    height:20px;
+    bottom:0;
+    padding:5px;
+    border-radius:100%;
+    right:0;
+    margin:0 auto;
+}
+
+
+//theme
+.beauty {
+    $defaultcolor: #f06eaa !global;
+    $defaultfont: "Fira Sans" !global;
+
+    .upload-img-box{ background:#f06eaa; }
+    .default { color: #f06eaa }
+    .toolbar-page .bar-button-default-md, .toolbar-page .toolbar-title-md{
+        color:#f06eaa;
+    }
+    .item-input-has-focus .label-md[floating], 
+    .input-has-focus .label-ios[floating]{
+        color: #f06eaa; //label color when focusing
+    }
+    .item-md.item-input.item-input-has-focus .item-inner,
+    .item-md.item-input.input-has-focus .item-inner,
+    .list-ios .item-input.input-has-focus .item-inner  {
+        border-bottom-color: #f06eaa;
+        -webkit-box-shadow: inset 0 -1px 0 0 #f06eaa;
+        box-shadow: inset 0 -1px 0 0 #f06eaa;
+    }
+    .list-md .item-input.item-input-has-focus:last-child,
+    .list-md .item-input.input-has-focus:last-child,
+    .list-ios .item-input.input-has-focus:last-child {
+        border-bottom-color: #f06eaa;
+        -webkit-box-shadow: inset 0 -1px 0 0 #f06eaa;
+        box-shadow: inset 0 -1px 0 0 #f06eaa;
+    }
+    .icon-modal{ color:#f06eaa; }
+    .time:before { 
+        background: transparent url('../../assets/imgs/beauty/jam.png') no-repeat;
+        background-size:contain;
+        background-position:center center;
+    
+    }
+    
+}
+
+.tasty {
+    $defaultcolor: #005952 !global;
+    $defaultfont: "Fira Sans" !global;
+
+    .upload-img-box{background:#005952;}
+    .default { color: #005952 }
+    .toolbar-page .bar-button-default-md, .toolbar-page .toolbar-title-md{
+        color:#005952;
+    }
+    .item-input-has-focus .label-md[floating], 
+    .input-has-focus .label-ios[floating]{
+        color: #005952; //label color when focusing
+    }
+    .item-md.item-input.item-input-has-focus .item-inner,
+    .item-md.item-input.input-has-focus .item-inner,
+    .list-ios .item-input.input-has-focus .item-inner  {
+        border-bottom-color: #005952;
+        -webkit-box-shadow: inset 0 -1px 0 0 #005952;
+        box-shadow: inset 0 -1px 0 0 #005952;
+    }
+    .list-md .item-input.item-input-has-focus:last-child,
+    .list-md .item-input.input-has-focus:last-child,
+    .list-ios .item-input.input-has-focus:last-child {
+        border-bottom-color: #005952;
+        -webkit-box-shadow: inset 0 -1px 0 0 #005952;
+        box-shadow: inset 0 -1px 0 0 #005952;
+    }
+    .icon-modal{
+        color:#005952;
+    }
+    .time:before { 
+        background: transparent url('../../assets/imgs/tasty/jam.png') no-repeat;
+        background-size:contain;
+        background-position:center center; 
+    }
+}
+
+
+.professional {
+    $defaultcolor: #9e0b0f !global;
+    $defaultfont: "Fira Sans" !global;
+
+    .upload-img-box{background:#9e0b0f;}
+    .default { color: #9e0b0f }
+    .toolbar-page .bar-button-default-md, .toolbar-page .toolbar-title-md{
+        color:#9e0b0f;
+    }
+    .item-input-has-focus .label-md[floating], 
+    .input-has-focus .label-ios[floating]{
+        color: #9e0b0f; //label color when focusing
+    }
+    .item-md.item-input.item-input-has-focus .item-inner,
+    .item-md.item-input.input-has-focus .item-inner,
+    .list-ios .item-input.input-has-focus .item-inner  {
+        border-bottom-color: #9e0b0f;
+        -webkit-box-shadow: inset 0 -1px 0 0 #9e0b0f;
+        box-shadow: inset 0 -1px 0 0 #9e0b0f;
+    }
+    .list-md .item-input.item-input-has-focus:last-child,
+    .list-md .item-input.input-has-focus:last-child,
+    .list-ios .item-input.input-has-focus:last-child {
+        border-bottom-color: #9e0b0f;
+        -webkit-box-shadow: inset 0 -1px 0 0 #9e0b0f;
+        box-shadow: inset 0 -1px 0 0 #9e0b0f;
+    }
+    .icon-modal{ color:#9e0b0f; }
+    .time:before { 
+        background: transparent url('../../assets/imgs/professional/jam.png') no-repeat; 
+        background-size:contain;
+        background-position:center center;
+    }
+}
+
+
+.excellent {
+    $defaultcolor: #fecb17 !global;
+    $defaultfont: "Fira Sans" !global;
+    
+    .upload-img-box{background:#fecb17;}
+    .default { color: #fecb17 }
+    .toolbar-page .bar-button-default-md, .toolbar-page .toolbar-title-md{
+        color:#fecb17;
+    }
+    .item-input-has-focus .label-md[floating], 
+    .input-has-focus .label-ios[floating]{
+        color: #fecb17; //label color when focusing
+    }
+    .item-md.item-input.item-input-has-focus .item-inner,
+    .item-md.item-input.input-has-focus .item-inner,
+    .list-ios .item-input.input-has-focus .item-inner  {
+        border-bottom-color: #fecb17;
+        -webkit-box-shadow: inset 0 -1px 0 0 #fecb17;
+        box-shadow: inset 0 -1px 0 0 #fecb17;
+    }
+    .list-md .item-input.item-input-has-focus:last-child,
+    .list-md .item-input.input-has-focus:last-child,
+    .list-ios .item-input.input-has-focus:last-child {
+        border-bottom-color: #fecb17;
+        -webkit-box-shadow: inset 0 -1px 0 0 #fecb17;
+        box-shadow: inset 0 -1px 0 0 #fecb17;
+    }
+    .icon-modal{
+        color:#fecb17;
+    }
+    .time:before { 
+        background: transparent url('../../assets/imgs/excellent/jam.png') no-repeat;
+        background-size:contain;
+        background-position:center center; 
+    }
+}
+
+
+
+//datepicker
+ionic2-datepicker{
+    .datepicker-wrapper .datepicker-header .weekday-header,
+    .datepicker-wrapper .datepicker-header{
+        background:#488aff !important;
+    }
+    .button-ios, .button-ios:hover,
+    .button-ios:focus, .button-ios:active,
+    .button-ios:visited { 
+        background: none !important; 
+        color: #333 !important
+    }
+    .datepicker-calendar .calendar-wrapper .datepicker-selected{
+        color:#fff !important;
+        border-radius: 5px !important;
+        background-color: #488aff !important;
+    }
+}

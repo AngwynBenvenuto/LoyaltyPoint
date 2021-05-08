@@ -1,0 +1,31 @@
+<ion-header [class]="themes">
+    <ion-toolbar color="dark">
+        <!-- <ion-title>Crop</ion-title> -->
+        <ion-buttons padding-left padding-right start>
+            <button ion-button icon-only (click)="cancel()" class="color-button">
+                <ion-icon name='ios-close' class="color-button"></ion-icon>
+            </button>
+        </ion-buttons>
+        <ion-buttons padding-left padding-right end>
+            <button ion-button (click)="cropperReset()">
+                <ion-icon name='ios-repeat' class="color-button"></ion-icon>
+            </button>
+        </ion-buttons>
+        <ion-buttons padding-left padding-right end>
+            <button ion-button icon-only (click)="imageRotate()">
+                <ion-icon name='ios-refresh' class="color-button"></ion-icon>
+            </button>
+        </ion-buttons>
+        <ion-buttons padding-left padding-right end>
+            <button ion-button icon-only (click)="finish()" class="color-button">
+                <ion-icon name='ios-checkmark' class="color-button"></ion-icon>
+            </button>
+        </ion-buttons>
+
+    </ion-toolbar>
+</ion-header>
+<ion-content class="background">
+    <div>
+        <img [src]="imageBase64" (load)="cropperLoad()" #image>
+    </div>
+</ion-content>

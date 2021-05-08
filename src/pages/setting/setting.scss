@@ -1,0 +1,56 @@
+page-setting { 
+    .logout-title{ position:relative; left:5px }
+    .logout-button, .logout-button:active,
+    .logout-button:focus, .logout-button:visited,
+    .logout-button:hover{
+        background:none
+    }
+    
+    
+
+    //
+    .beauty{
+        .profile-button, .profile-button:active,
+        .profile-button:focus, .profile-button:visited,
+        .profile-button:hover{
+            color:#fff;
+            background:#f06eaa;
+            border:none;
+        }
+        ion-icon{ color: #f06eaa}
+        .size-lonceng{ color: white!important }
+    }
+    .tasty{
+        .profile-button, .profile-button:active,
+        .profile-button:focus, .profile-button:visited,
+        .profile-button:hover{
+            color:#fff;
+            background:#005952;
+            border:none;
+        }
+        ion-icon{ color: #005952}
+        .size-lonceng{ color: white !important }
+    }
+    .professional{
+        .profile-button, .profile-button:active,
+        .profile-button:focus, .profile-button:visited,
+        .profile-button:hover{
+            color:#fff;
+            background:#9e0b0f;
+            border:none;
+        }
+        ion-icon{ color: #9e0b0f}
+        .size-lonceng{ color: white !important }
+    }
+    .excellent{
+        .profile-button, .profile-button:active,
+        .profile-button:focus, .profile-button:visited,
+        .profile-button:hover{
+            color:#fff;
+            background:#fecb17;
+            border:none;
+        }
+        ion-icon{ color: #fecb17}
+        .size-lonceng{ color: white !important }
+    }
+}

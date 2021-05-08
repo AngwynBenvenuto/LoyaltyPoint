@@ -1,0 +1,49 @@
+<ion-header no-border>
+  <div [class]="themes">
+    <ion-navbar color="toolbar-page">
+      <ion-title></ion-title>
+    </ion-navbar>
+  </div>
+</ion-header>
+<ion-content>
+  <div class="register-wrapper {{themes}}" padding>
+    <div class="app-title register-title">
+      <span class="default">{{ 'Register' | translate }}</span>
+    </div>
+    
+    <div class="register-form">
+      <form>
+        <ion-item transparent>
+          <ion-label floating>{{ 'Nama User' | translate }}</ion-label>
+          <ion-input type="text" [(ngModel)]="dataRegister.name" name="name"></ion-input>
+        </ion-item>
+        <ion-item transparent>
+          <ion-label floating>{{ 'Email' | translate }}</ion-label>
+          <ion-input type="text" [(ngModel)]="dataRegister.email" name="email"></ion-input>
+        </ion-item>
+        <ion-item transparent>
+          <ion-label floating>{{ 'Telepon' | translate }}</ion-label>
+          <ion-input type="tel" [(ngModel)]="dataRegister.phone" name="phone"></ion-input>
+        </ion-item>
+        <ion-item transparent>
+          <ion-label floating>{{ 'Password' | translate }}</ion-label>
+          <ion-input type="password" [(ngModel)]="dataRegister.password" name="password"></ion-input>
+        </ion-item>
+        <ion-item transparent>
+          <ion-label floating>{{ 'Konfirmasi Password' | translate }}</ion-label>
+          <ion-input type="password" [(ngModel)]="dataRegister.confirm_password" name="confirm_password"></ion-input>
+        </ion-item>
+        <button ion-button block color="default" 
+          class="register-button round" (click)="register()">{{ 'Register' | translate }}</button>
+      </form>
+    </div>
+    
+    <div class="div-login-wrapper">
+      <div text-center>
+        <span>{{ 'Sudah mempunyai akun?' | translate }} <a class="default" (click)="goToLogin()">{{ 'Login disini' | translate }}</a></span>
+      </div>
+    </div>
+  </div>
+  
+    
+</ion-content>
